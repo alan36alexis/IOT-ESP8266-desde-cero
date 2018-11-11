@@ -13,10 +13,11 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, HIGH);
  
-  // Connect to WiFi network
-  Serial.println();
-  Serial.println();
+  // Conecta a la red WIFI
+  Serial.println(); //Imprime una linea en blanco en el monitor serial
+  Serial.println(); //Imprime una linea en blanco en el monitor serial
   Serial.print("Conectando a ");
+  Serial.println(ssid);
   Serial.println(ssid);
  
   WiFi.begin(ssid, password);
